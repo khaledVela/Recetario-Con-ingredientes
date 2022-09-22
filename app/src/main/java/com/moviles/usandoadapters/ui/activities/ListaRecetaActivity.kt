@@ -36,7 +36,21 @@ class ListaRecetaActivity : AppCompatActivity(), RecetaRecyclerAdapter.OnContact
                 )
             ),
             Receta(
-                1, "Carne asada", lorem, arrayListOf(
+                2, "Carne con ajo", lorem, arrayListOf(
+                    Ingrediente(1, "Cebolla", R.drawable.pollo),
+                    Ingrediente(3, "Carne", R.drawable.pollo),
+                    Ingrediente(6, "Ajo", R.drawable.pollo),
+                    Ingrediente(5, "Mantequilla", R.drawable.pollo),
+                )
+            ),
+            Receta(
+                2, "Asado", lorem, arrayListOf(
+                    Ingrediente(3, "Carne", R.drawable.pollo),
+                    Ingrediente(5, "Mantequilla", R.drawable.pollo),
+                )
+            ),
+            Receta(
+                3, "Carne con especias", lorem, arrayListOf(
                     Ingrediente(1, "Cebolla", R.drawable.pollo),
                     Ingrediente(3, "Carne", R.drawable.pollo),
                     Ingrediente(6, "Ajo", R.drawable.pollo)

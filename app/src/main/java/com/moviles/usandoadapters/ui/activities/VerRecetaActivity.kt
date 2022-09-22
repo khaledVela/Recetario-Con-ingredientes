@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.moviles.usandoadapters.R
 import com.moviles.usandoadapters.ui.adapters.IngredientesRecyclerAdapter
@@ -32,7 +33,7 @@ class VerRecetaActivity : AppCompatActivity() {
         nombre.text=receta.nombres
         procedim.text=receta.Procedimiento
         adapter = verIngredientesRecyclerAdapter(receta.Ingrediente)
-        lstNames.layoutManager = GridLayoutManager(this, 2)
+        lstNames.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         lstNames.adapter = adapter
     }
 }
